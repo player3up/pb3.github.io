@@ -3,7 +3,15 @@
         <title>我的全新 Hugo 网站</title>
         <link>https://player3up.github.io/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 16 Feb 2024 21:04:46 &#43;0800</lastBuildDate>
             <atom:link href="https://player3up.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>First Post</title>
+    <link>https://player3up.github.io/posts/first-post/</link>
+    <pubDate>Fri, 16 Feb 2024 21:04:46 &#43;0800</pubDate>
+    <author>xxxx</author>
+    <guid>https://player3up.github.io/posts/first-post/</guid>
+    <description><![CDATA[111]]></description>
+</item>
+</channel>
 </rss>
