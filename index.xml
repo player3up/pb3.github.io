@@ -1,17 +1,35 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>我的全新 Hugo 网站</title>
+        <title>花有重开日，人无再少年</title>
         <link>https://player3up.github.io/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 16 Feb 2024 21:04:46 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>123 (pb3)</managingEditor>
+            <webMaster>123 (pb3)</webMaster><lastBuildDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</lastBuildDate>
             <atom:link href="https://player3up.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>First Post</title>
-    <link>https://player3up.github.io/first-post/</link>
-    <pubDate>Fri, 16 Feb 2024 21:04:46 &#43;0800</pubDate>
+    <title>主题文档 - 内容</title>
+    <link>https://player3up.github.io/index.zh-cn/</link>
+    <pubDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://player3up.github.io/index.zh-cn/</guid>
+    <description><![CDATA[<p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
+</item>
+<item>
+    <title>Hugo开发日记</title>
+    <link>https://player3up.github.io/hugodp/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate>
     <author>pb3</author>
-    <guid>https://player3up.github.io/first-post/</guid>
-    <description><![CDATA[111]]></description>
+    <guid>https://player3up.github.io/hugodp/</guid>
+    <description><![CDATA[<p>这篇文章记录了我的整个建站过程.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - bilibili Shortcode</title>
+    <link>https://player3up.github.io/index.zh-cn/</link>
+    <pubDate>Tue, 03 Mar 2020 11:29:41 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://player3up.github.io/index.zh-cn/</guid>
+    <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"></a>
+<p><code>bilibili</code> shortcode 提供了一个内嵌的用来播放 bilibili 视频的响应式播放器.</p>]]></description>
 </item>
 </channel>
 </rss>

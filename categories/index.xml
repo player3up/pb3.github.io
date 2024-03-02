@@ -1,7 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Categories - Category - 我的全新 Hugo 网站</title>
+        <title>Categories - Category - 花有重开日，人无再少年</title>
         <link>https://player3up.github.io/categories/</link>
-        <description>Categories - Category - 我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://player3up.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <description>Categories - Category - 花有重开日，人无再少年</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>123 (pb3)</managingEditor>
+            <webMaster>123 (pb3)</webMaster><lastBuildDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</lastBuildDate><atom:link href="https://player3up.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Documentation</title>
+    <link>https://player3up.github.io/categories/documentation/</link>
+    <pubDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</pubDate>
+    <author>pb3</author>
+    <guid>https://player3up.github.io/categories/documentation/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>Hugo日记</title>
+    <link>https://player3up.github.io/categories/hugo%E6%97%A5%E8%AE%B0/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate>
+    <author>pb3</author>
+    <guid>https://player3up.github.io/categories/hugo%E6%97%A5%E8%AE%B0/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

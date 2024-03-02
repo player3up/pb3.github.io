@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Hugo开发日记 - 花有重开日，人无再少年</title><meta name="Description" content="这篇文章记录了我的整个建站过程."><meta property="og:title" content="Hugo开发日记" />
+<meta property="og:description" content="这篇文章记录了我的整个建站过程." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://player3up.github.io/hugodp/" /><meta property="og:image" content="https://player3up.github.io/hugodp/cat.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-12-01T21:57:40+08:00" />
+<meta property="article:modified_time" content="2020-01-01T16:45:40+08:00" /><meta property="og:site_name" content="我的网站" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://player3up.github.io/hugodp/cat.png" /><meta name="twitter:title" content="Hugo开发日记"/>
+<meta name="twitter:description" content="这篇文章记录了我的整个建站过程."/>
+<meta name="application-name" content="我的网站">
+<meta name="apple-mobile-web-app-title" content="我的网站"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/b5.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://player3up.github.io/hugodp/" /><link rel="prev" href="https://player3up.github.io/index.zh-cn/" /><link rel="next" href="https://player3up.github.io/index.zh-cn/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Hugo开发日记",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/player3up.github.io\/hugodp\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/player3up.github.io\/hugodp\/cat.png",
+                            "width":  5184 ,
+                            "height":  3456 
+                        }],"genre": "posts","keywords": "Hugo日记","wordcount":  1325 ,
+        "url": "https:\/\/player3up.github.io\/hugodp\/","datePublished": "2019-12-01T21:57:40+08:00","dateModified": "2020-01-01T16:45:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "pb3"
+            },"description": "这篇文章记录了我的整个建站过程."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="花有重开日，人无再少年"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/b5.png"
+        data-srcset="/b5.png, /b5.png 1.5x, /b5.png 2x"
+        data-sizes="auto"
+        alt="/b5.png"
+        title="/b5.png" />pb3&#39;s Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="花有重开日，人无再少年"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/b5.png"
+        data-srcset="/b5.png, /b5.png 1.5x, /b5.png 2x"
+        data-sizes="auto"
+        alt="/b5.png"
+        title="/b5.png" />pb3&#39;s Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Hugo开发日记</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>pb3</a>
+</span>&nbsp;<span class="post-category">included in <a href="/categories/hugo%E6%97%A5%E8%AE%B0/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Hugo日记</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2019-12-01">2019-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1325 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/hugodp/cat.png"
+        data-srcset="/hugodp/cat.png, /hugodp/cat.png 1.5x, /hugodp/cat.png 2x"
+        data-sizes="auto"
+        alt="/hugodp/cat.png"
+        title="这篇文章记录了我的整个建站过程." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#建立新博客">建立新博客</a></li>
+    <li><a href="#第一次新建文章">第一次新建文章</a>
+      <ul>
+        <li><a href="#本地构建bug">本地构建bug</a></li>
+      </ul>
+    </li>
+    <li><a href="#部署到github">部署到github</a>
+      <ul>
+        <li><a href="#解决重复输入用户名密钥问题">解决重复输入用户名密钥问题</a></li>
+        <li><a href="#git-push-错误">git push 错误</a></li>
+      </ul>
+    </li>
+    <li><a href="#loveit主题">LoveIT主题</a>
+      <ul>
+        <li><a href="#语言设置">语言设置</a></li>
+        <li><a href="#头像及网页logo">头像及网页logo</a></li>
+      </ul>
+    </li>
+    <li><a href="#文章摘要">文章摘要</a>
+      <ul>
+        <li><a href="#摘要图片">摘要图片</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>这篇文章记录了我的整个建站过程.</p>
+<h1 id="建站记录">建站记录</h1>
+<h2 id="建立新博客">建立新博客</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new site myblog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="第一次新建文章">第一次新建文章</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new posts/first-post.md
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">hugo -D #执行该命令生成public
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><code>hugo</code>该命令应该==放在最后==，在一切构建都完成再进行</div>
+        </div>
+    </div>
+<h3 id="本地构建bug">本地构建bug</h3>
+<p>在<strong>Windows</strong>环境下使用git bash进行构建无法成功，使用powershell可以完美做到本地构建</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -t LoveIt --buildDrafts		//在本地构建博客
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="部署到github">部署到github</h2>
+<ol>
+<li>在github新建仓库，并以<code>github.io</code>结尾</li>
+<li>此处使用git bash</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/player3up/player3up.github.io.git
+</span></span><span class="line"><span class="cl">git remote -v  #列出当前仓库中已配置的远程仓库，并显示它们的 URL
+</span></span><span class="line"><span class="cl">git remote rm origin #如果提示已存在，可使用这个命令删除
+</span></span><span class="line"><span class="cl">git pull --rebase origin master
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span><span class="line"><span class="cl">git config --global credential.helper cache  #在其他命令开始前，避免每次输入密码
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li><code>credential-cache</code>是 Git 提供的一个凭证管理器，用于在一段时间内保存用户的凭证（例如用户名和密码），以便能够在不需要再次输入凭证的情况下进行后续的操作。(如果git版本过旧无法使用该命令)</li>
+<li>且需要检查是否有与凭证管理相关的配置项</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">credential.helper=cache
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>若没有则需要手动添加</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global credential.helper cache
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>ps:使用后github部署查看时需要vpn</p>
+<h3 id="解决重复输入用户名密钥问题">解决重复输入用户名密钥问题</h3>
+<p>在安装git时将其应用到powershell上，在第一次使用密码时会要求登录，完美解决重复问题，也不需要上述命令来保存</p>
+<h3 id="git-push-错误">git push 错误</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"> <span class="p">!</span> <span class="p">[</span><span class="no">rejected</span><span class="p">]</span>        <span class="n">master</span> <span class="p">-&gt;</span> <span class="n">master</span> <span class="p">(</span><span class="n">fetch</span> <span class="n">first</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">error</span><span class="err">:</span> <span class="n">failed</span> <span class="n">to</span> <span class="n">push</span> <span class="n">some</span> <span class="n">refs</span> <span class="n">to</span> <span class="s1">&#39;https://github.com/player3up/player3up.github.io.git&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">Updates</span> <span class="n">were</span> <span class="n">rejected</span> <span class="n">because</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">contains</span> <span class="n">work</span> <span class="n">that</span> <span class="n">you</span> <span class="k">do</span> <span class="n">not</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">have</span> <span class="n">locally</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">usually</span> <span class="n">caused</span> <span class="n">by</span> <span class="n">another</span> <span class="n">repository</span> <span class="n">pushing</span> <span class="n">to</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">the</span> <span class="n">same</span> <span class="k">ref</span><span class="p">.</span> <span class="k">If</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">integrate</span> <span class="n">the</span> <span class="n">remote</span> <span class="n">changes</span><span class="p">,</span> <span class="n">use</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="s1">&#39;git pull&#39;</span> <span class="n">before</span> <span class="n">pushing</span> <span class="n">again</span><span class="p">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">hint</span><span class="err">:</span> <span class="n">See</span> <span class="n">the</span> <span class="s1">&#39;Note about fast-forwards&#39;</span> <span class="k">in</span> <span class="s1">&#39;git push --help&#39;</span> <span class="k">for</span> <span class="n">details</span><span class="p">.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>解决办法：</p>
+<p>先重新拉取，再push</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git pull --rebase origin master
+</span></span><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="loveit主题">LoveIT主题</h2>
+<p>头像位置为相对位置，且跟配置文件有关的图像放在<code>themes/“你主题的名字”/static</code>里面，而博客文章的图像放在static里面</p>
+<h3 id="语言设置">语言设置</h3>
+<p>在增加语言设置时需注意将<code>defaultContentLanguage = &quot;zh-cn&quot;</code>#默认中文，语句放在开头处，在末尾放置可能会导致语句无效</p>
+<h3 id="头像及网页logo">头像及网页logo</h3>
+<p>将所需图片放置在<code>themes/“你主题的名字”/static</code>路径内</p>
+<p>通过更改根目录的<code>hugo.toml</code>文件的语句例如</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> #  页面头部导航栏标题配置
+</span></span><span class="line"><span class="cl">    [params.header.title]
+</span></span><span class="line"><span class="cl">      # LOGO 的 URL
+</span></span><span class="line"><span class="cl">      logo = &#34;/b5.png&#34;
+</span></span><span class="line"><span class="cl">      # 标题名称
+</span></span><span class="line"><span class="cl">      name = &#34;pb3&#39;s Blog&#34;
+</span></span><span class="line"><span class="cl">      # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+</span></span><span class="line"><span class="cl">      pre = &#34;&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>logo语句位置</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"> #  应用图标配置
+</span></span><span class="line"><span class="cl">  [params.app]
+</span></span><span class="line"><span class="cl">    # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+</span></span><span class="line"><span class="cl">    title = &#34;我的网站&#34;
+</span></span><span class="line"><span class="cl">    # 是否隐藏网站图标资源链接
+</span></span><span class="line"><span class="cl">    noFavicon = false
+</span></span><span class="line"><span class="cl">    # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+</span></span><span class="line"><span class="cl">    svgFavicon = &#34;/b5.png&#34;
+</span></span><span class="line"><span class="cl">    # Android 浏览器主题色
+</span></span><span class="line"><span class="cl">    themeColor = &#34;#ffffff&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>以及应用图标位置我这里的图片名称是<code>b5.png</code>即可更改网页图标</p>
+<h2 id="文章摘要">文章摘要</h2>
+<p>在编辑文章预览部分时，其分隔符和变量赋值符号发生变化</p>
+<p>有以下几点</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">分隔符：
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">weight: 4
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">⬇（变为）
+</span></span><span class="line"><span class="cl">+++	（hugo自动生成）
+</span></span><span class="line"><span class="cl">weight: 4
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">赋值符号由
+</span></span><span class="line"><span class="cl">weight: 4
+</span></span><span class="line"><span class="cl">⬇（变为）
+</span></span><span class="line"><span class="cl">weight= 4（hugo自动生成）
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以在博客根目录的archetypes/default.md文件中编辑文章样式，该文件会影响指令生成的文章</p>
+<h3 id="摘要图片">摘要图片</h3>
+<p>在设置文章摘要图片时根据hugo的<a href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener noreffer">页面包</a>
+中的<a href="https://gohugo.io/content-management/page-resources/" target="_blank" rel="noopener noreffer">页面资源</a>
+.来进行编辑，需将文章名字改为<code>index.md</code>、<code>_index.md</code>这样才使用resources资源进行引用</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/hugodp/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://player3up.github.io/hugodp/" data-title="Hugo开发日记" data-hashtags="Hugo日记"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://player3up.github.io/hugodp/" data-hashtag="Hugo日记"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://player3up.github.io/hugodp/" data-title="Hugo开发日记"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://player3up.github.io/hugodp/" data-title="Hugo开发日记"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://player3up.github.io/hugodp/" data-title="Hugo开发日记"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/hugo%E6%97%A5%E8%AE%B0/">Hugo日记</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/index.zh-cn/" class="prev" rel="prev" title="主题文档 - bilibili Shortcode"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>主题文档 - bilibili Shortcode</a>
+            <a href="/index.zh-cn/" class="next" rel="next" title="主题文档 - 内容">主题文档 - 内容<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.122.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2019 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">pb3</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/lightgallery/lightgallery.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-thumbnail.min.js"></script><script type="text/javascript" src="/lib/lightgallery/plugins/lg-zoom.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
