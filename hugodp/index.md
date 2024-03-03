@@ -64,11 +64,23 @@ credential.helper=cache
 git config --global credential.helper cache
 ```
 
+{{< admonition tip >}}
+
 ps:使用后github部署查看时需要vpn
+
+{{< /admonition >}}
 
 ### 解决重复输入用户名密钥问题
 
 在安装git时将其应用到powershell上，在第一次使用密码时会要求登录，完美解决重复问题，也不需要上述命令来保存
+
+### 解决上传至GitHub使用pages构建问题
+
+在使用GitHub pages时会出现构建问题
+
+[此文](https://lewky.cn/posts/hugo-4.html/#%E7%BB%88%E6%9E%81%E6%96%B9%E6%A1%88%E6%96%B0%E5%A2%9Enojekyll%E6%96%87%E4%BB%B6)中得到完美解决
+
+
 
 ### git push 错误
 

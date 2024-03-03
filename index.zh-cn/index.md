@@ -1,26 +1,49 @@
-# 主题文档 - 内容
+# 主题文档 - bilibili Shortcode
 
 
-了解如何在 **LoveIt** 主题中快速, 直观地创建和组织内容.
+{{< version 0.2.0 changed >}}
+
+`bilibili` shortcode 提供了一个内嵌的用来播放 bilibili 视频的响应式播放器.
 
 <!--more-->
 
-## 1 内容组织 {#contents-organization}
+如果视频只有一个部分, 则仅需要视频的 BV `id`, 例如:
 
-以下是一些方便你清晰管理和生成文章的目录结构建议:
+```code
+https://www.bilibili.com/video/BV1Sx411T7QQ
+```
 
-* 保持博客文章存放在 `content/posts` 目录, 例如: `content/posts/我的第一篇文章.md`
-* 保持简单的静态页面存放在 `content` 目录, 例如: `content/about.md`
-* 本地资源组织
+一个 `bilibili` 示例:
 
-{{< admonition note "本地资源引用" >}}
-{{< version 0.2.10 >}}
+```markdown
+{{</* bilibili BV1Sx411T7QQ */>}}
+或者
+{{</* bilibili id=BV1Sx411T7QQ */>}}
+```
 
-有三种方法来引用**图片**和**音乐**等本地资源:
+呈现的输出效果如下:
 
-1. 使用[页面包](https://gohugo.io/content-management/page-bundles/)中的[页面资源](https://gohugo.io/content-management/page-resources/).
-   你可以使用适用于 `Resources.GetMatch` 的值或者直接使用相对于当前页面目录的文件路径来引用页面资源.
-2. 将本地资源放在 **assets** 目录中, 默认路径是 `/assets`.
+{{< bilibili id=BV1Sx411T7QQ >}}
+
+如果视频包含多个部分, 则除了视频的 BV `id` 之外, 还需要 `p`, 默认值为 `1`, 例如:
+
+```code
+https://www.bilibili.com/video/BV1TJ411C7An?p=3
+```
+
+一个带有 `p` 参数的 `bilibili` 示例:
+
+```markdown
+{{</* bilibili BV1TJ411C7An 3 */>}}
+或者
+{{</* bilibili id=BV1TJ411C7An p=3 */>}}
+```
+
+呈现的输出效果如下:
+
+{{< bilibili id=BV1TJ411C7An p=3 >}}
+
+录中, 默认路径是 `/assets`.
    引用资源的文件路径是相对于 assets 目录的.
 3. 将本地资源放在 **static** 目录中, 默认路径是 `/static`.
    引用资源的文件路径是相对于 static 目录的.
